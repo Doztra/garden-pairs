@@ -1,0 +1,12 @@
+{
+  "name": "garden-pairs",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-10-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [{ "name": "Main", "class_name": "MemoryMatch" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["MemoryMatch"] }],
+  "assets": { "directory": "./public" },
+  "workers_dev": true
+}

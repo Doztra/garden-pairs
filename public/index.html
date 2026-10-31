@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Garden Pairs — a quiet game for two</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<main>
+  <header>
+    <h1>Garden <span class="accent">Pairs</span></h1>
+    <div class="conn"><span id="connDot" class="dot offline"></span><span id="connText">connecting…</span></div>
+  </header>
+
+  <div id="status" class="status">Connecting…</div>
+  <div id="badge" class="badge"></div>
+
+  <div id="board" class="board" aria-label="Memory match board"></div>
+
+  <div class="controls">
+    <button id="invite" class="btn">Copy invite link</button>
+    <button id="rematch" class="btn primary hidden">Play again</button>
+  </div>
+
+  <details class="rules">
+    <summary>How to play</summary>
+    <p>
+      You're playing together, not against each other. Take turns — or don't,
+      there's no rush — flipping cards to find the matching pairs. Find all
+      eight and the garden is complete. Share the invite link with a friend
+      so you can play from different devices.
+    </p>
+  </details>
+</main>
+<script type="module" src="/client.js"></script>
+</body>
+</html>
